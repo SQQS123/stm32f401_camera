@@ -98,6 +98,9 @@
 ".\objects\emount_protocol.o"
 ".\objects\gpio_config.o"
 ".\objects\usart_config.o"
+".\objects\key.o"
+".\objects\delay.o"
+".\objects\sys.o"
 --strict --scatter ".\Objects\stm32f401_camera.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

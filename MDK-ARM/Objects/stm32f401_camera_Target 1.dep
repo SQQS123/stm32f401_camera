@@ -2501,7 +2501,7 @@ F (..\User\inc\main.h)(0x6968DC1F)()
 F (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)()
 F (..\User\inc\stm32f4xx_it.h)(0x6968D4A8)()
 F (..\User\inc\system_stm32f4xx.h)(0x6968D4C8)()
-F (..\User\src\main.c)(0x69690802)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/main.o -MD)
+F (..\User\src\main.c)(0x696CED29)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/main.o -MD)
 I (..\User\inc\main.h)(0x6968DC1F)
 I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
 I (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)
@@ -2535,8 +2535,11 @@ I (..\Library\Inc\stm32f4xx_hal_pwr.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)
-I (..\BSP\inc\emount_protocol.h)(0x6968F4F2)
-I (..\BSP\inc\gpio_config.h)(0x696907EB)
+I (..\BSP\inc\emount_protocol.h)(0x696CBBE1)
+I (..\BSP\inc\gpio_config.h)(0x696CBBEF)
+I (..\BSP\inc\delay.h)(0x696CEA19)
+I (..\BSP\inc\sys.h)(0x696CEA10)
+I (..\BSP\inc\key.h)(0x696CECA2)
 F (..\User\src\stm32f4xx_it.c)(0x6968DC8F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/stm32f4xx_it.o -MD)
 I (..\User\inc\main.h)(0x6968DC1F)
 I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
@@ -2605,10 +2608,13 @@ I (..\Library\Inc\stm32f4xx_hal_pwr.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)
-F (..\BSP\inc\emount_protocol.h)(0x6968F4F2)()
-F (..\BSP\inc\gpio_config.h)(0x696907EB)()
-F (..\BSP\src\emount_protocol.c)(0x6968F53C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/emount_protocol.o -MD)
-I (..\BSP\inc\emount_protocol.h)(0x6968F4F2)
+F (..\BSP\inc\emount_protocol.h)(0x696CBBE1)()
+F (..\BSP\inc\gpio_config.h)(0x696CBBEF)()
+F (..\BSP\inc\key.h)(0x696CECA2)()
+F (..\BSP\inc\delay.h)(0x696CEA19)()
+F (..\BSP\inc\sys.h)(0x696CEA10)()
+F (..\BSP\src\emount_protocol.c)(0x696CBC00)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/emount_protocol.o -MD)
+I (..\BSP\inc\emount_protocol.h)(0x696CBBE1)
 I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
 I (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)
 I (..\Library\Inc\stm32f4xx_hal_rcc.h)(0x6968D4C8)
@@ -2642,8 +2648,8 @@ I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)
 I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-F (..\BSP\src\gpio_config.c)(0x696907DF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/gpio_config.o -MD)
-I (..\BSP\inc\gpio_config.h)(0x696907EB)
+F (..\BSP\src\gpio_config.c)(0x696CBC0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/gpio_config.o -MD)
+I (..\BSP\inc\gpio_config.h)(0x696CBBEF)
 I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
 I (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)
 I (..\Library\Inc\stm32f4xx_hal_rcc.h)(0x6968D4C8)
@@ -2677,3 +2683,108 @@ I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
 I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)
 F (..\BSP\src\usart_config.c)(0x696906E8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/usart_config.o -MD)
+F (..\BSP\src\key.c)(0x696CEB7B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/key.o -MD)
+I (..\BSP\inc\key.h)(0x696CECA2)
+I (..\CMSIS\stm32f4xx.h)(0x6968D4C8)
+I (..\CMSIS\stm32f401xe.h)(0x6968D4C8)
+I (..\CMSIS\core_cm4.h)(0x69403680)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
+I (..\CMSIS\cmsis_version.h)(0x69403680)
+I (..\CMSIS\cmsis_compiler.h)(0x69403680)
+I (..\CMSIS\cmsis_armclang.h)(0x69403680)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x68135C42)
+I (..\CMSIS\.\m-profile\cmsis_armclang_m.h)(0x69403680)
+I (..\CMSIS\m-profile\armv7m_mpu.h)(0x69403680)
+I (..\User\inc\system_stm32f4xx.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
+I (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)
+I (..\Library\Inc\stm32f4xx_hal_rcc.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_def.h)(0x6968D4C8)
+I (..\Library\Inc\Legacy\stm32_hal_legacy.h)(0x6968D4C8)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
+I (..\Library\Inc\stm32f4xx_hal_rcc_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_gpio.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_gpio_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_dma.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_dma_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_cortex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_i2c.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_i2c_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_pwr.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)
+I (..\BSP\inc\delay.h)(0x696CEA19)
+I (..\BSP\inc\sys.h)(0x696CEA10)
+F (..\BSP\src\delay.c)(0x696CEC4B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/delay.o -MD)
+I (..\BSP\inc\sys.h)(0x696CEA10)
+I (..\CMSIS\stm32f4xx.h)(0x6968D4C8)
+I (..\CMSIS\stm32f401xe.h)(0x6968D4C8)
+I (..\CMSIS\core_cm4.h)(0x69403680)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
+I (..\CMSIS\cmsis_version.h)(0x69403680)
+I (..\CMSIS\cmsis_compiler.h)(0x69403680)
+I (..\CMSIS\cmsis_armclang.h)(0x69403680)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x68135C42)
+I (..\CMSIS\.\m-profile\cmsis_armclang_m.h)(0x69403680)
+I (..\CMSIS\m-profile\armv7m_mpu.h)(0x69403680)
+I (..\User\inc\system_stm32f4xx.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
+I (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)
+I (..\Library\Inc\stm32f4xx_hal_rcc.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_def.h)(0x6968D4C8)
+I (..\Library\Inc\Legacy\stm32_hal_legacy.h)(0x6968D4C8)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
+I (..\Library\Inc\stm32f4xx_hal_rcc_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_gpio.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_gpio_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_dma.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_dma_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_cortex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_i2c.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_i2c_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_pwr.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)
+I (..\BSP\inc\delay.h)(0x696CEA19)
+F (..\BSP\src\sys.c)(0x696CEDB4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../CMSIS -I ../CMSIS/m-profile -I ../Library/Inc -I ../Library/Inc/Legacy -I ../Library/Src -I ../Library/Src/Legacy -I ../User/inc -I ../User/src -I ../BSP/inc -I ../BSP/src -Wno-invalid-utf8 -Wno-empty-translation-unit -Wno-padded -Wno-unused-parameter -Wno-missing-noreturn -Wno-unsafe-buffer-usage -Wno-cast-align -Wno-switch-enum -Wno-covered-switch-default -Wno-implicit-int-conversion -Wno-bad-function-cast -Wno-missing-variable-declarations-D__UVISION_VERSION="538" -DSTM32F401xE -DUSE_HAL_DRIVER -DSTM32F401x6-o ./objects/sys.o -MD)
+I (..\BSP\inc\sys.h)(0x696CEA10)
+I (..\CMSIS\stm32f4xx.h)(0x6968D4C8)
+I (..\CMSIS\stm32f401xe.h)(0x6968D4C8)
+I (..\CMSIS\core_cm4.h)(0x69403680)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
+I (..\CMSIS\cmsis_version.h)(0x69403680)
+I (..\CMSIS\cmsis_compiler.h)(0x69403680)
+I (..\CMSIS\cmsis_armclang.h)(0x69403680)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x68135C42)
+I (..\CMSIS\.\m-profile\cmsis_armclang_m.h)(0x69403680)
+I (..\CMSIS\m-profile\armv7m_mpu.h)(0x69403680)
+I (..\User\inc\system_stm32f4xx.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal.h)(0x6968D4C8)
+I (..\User\inc\stm32f4xx_hal_conf.h)(0x6968E1E9)
+I (..\Library\Inc\stm32f4xx_hal_rcc.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_def.h)(0x6968D4C8)
+I (..\Library\Inc\Legacy\stm32_hal_legacy.h)(0x6968D4C8)
+I (C:\Users\user\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
+I (..\Library\Inc\stm32f4xx_hal_rcc_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_gpio.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_gpio_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_dma.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_dma_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_cortex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_i2c.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_i2c_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_pwr.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_pwr_ex.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_spi.h)(0x6968D4C8)
+I (..\Library\Inc\stm32f4xx_hal_uart.h)(0x6968D4C8)

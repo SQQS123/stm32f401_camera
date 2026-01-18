@@ -21,6 +21,8 @@
 #include "main.h"
 #include "emount_protocol.h"
 #include "gpio_config.h"
+#include "delay.h"
+#include "key.h"
 
 
 UART_HandleTypeDef huart1;
@@ -43,7 +45,8 @@ void MX_DMA_Init(void);
   * @brief  Main program
   * @param  None
   * @retval None
-  */
+	*/
+/*
 int main(void)
 {
 
@@ -61,7 +64,8 @@ int main(void)
 	// 启动UART接收
 	HAL_UART_Receive_DMA(&huart1, rx_buffer, 64);
 	
-  /* Infinite loop */
+ Infinite loop */
+/*
   while (1)
   {
 		// 检查是否接收到完整消息
@@ -74,6 +78,23 @@ int main(void)
 			HAL_UART_Receive_DMA(&huart1, rx_buffer, 64);
 		}
   }
+}
+
+*/
+
+//测试消抖的主函数
+int main(void){
+	HAL_Init();
+	SystemClock_Config();
+	delay_init(84);
+	key_init();
+	
+	if(key_scan()){
+		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_5);
+	}
+	else{
+		delay_ms(10);
+	}
 }
 
 
@@ -113,7 +134,7 @@ static void SystemClock_Config(void)
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
   
   /* Enable HSE Oscillator and activate PLL with HSE as source */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;      //告诉 HAL：我要配置的是高速外部晶振（HSE）
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;      //告诉 HAL：我要配置的是高速外部晶振（HSE），CubeMX里相当于最左面选择HSE
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;                        //把 HSE 打开（如果是 Proteus 仿真，这里相当于让软件模型知道‘外部 8 MHz 源已使能’）
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;                    //打开 PLL
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;            //PLL 的时钟源选择 HSE

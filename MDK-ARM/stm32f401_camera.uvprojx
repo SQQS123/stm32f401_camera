@@ -929,6 +929,21 @@
               <FileType>5</FileType>
               <FilePath>..\BSP\inc\gpio_config.h</FilePath>
             </File>
+            <File>
+              <FileName>key.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\inc\key.h</FilePath>
+            </File>
+            <File>
+              <FileName>delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\inc\delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>sys.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\BSP\inc\sys.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -948,6 +963,21 @@
               <FileName>usart_config.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\src\usart_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\src\sys.c</FilePath>
             </File>
           </Files>
         </Group>
